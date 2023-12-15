@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Taco Cloud</title>
+</head>
+
+<body>
+<form action="/log" method="GET">
+    <label for="loginInput">Логин:</label>
+    <input type="text" id="loginInput" name="login" required>
+    <br>
+    <label for="passwordInput">Пароль:</label>
+    <input type="password" id="passwordInput" name="password" required>
+    <br>
+    <button type="submit">Отправить</button>
+    <p th:text="${message}">
+</form>
+
+</body>
+
+</html>
